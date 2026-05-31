@@ -1,0 +1,16 @@
+# Vercel
+.vercel
+
+# Claude Code
+.claude/
+
+# Logs
+dev-log.txt
+*.log
+
+# Local project folders (separate repos)
+mapcrowd/
+
+# OS
+.DS_Store
+Thumbs.db
