@@ -12,6 +12,27 @@ entire site is one file: [`index.html`](./index.html).
 - **GitHub:** https://github.com/snowwarrior1-alt/personal-site
 - **Host:** Vercel project `kevin-li-site` (team scope `snowwarrior1-alts-projects`)
 
+## Local workspace
+
+This repo is checked out at **`C:\Users\snoww\Mapper+Tracker\`** (renamed from
+`Map` in June 2026). That folder doubles as a workspace: alongside this
+portfolio it holds the sibling project repos as **gitignored subfolders**, each
+its own independent git repo:
+
+| Subfolder | Project | GitHub | Live |
+|---|---|---|---|
+| `mapcrowd/` | MapCrowd | `snowwarrior1-alts-projects`/`Mapper` | mapcrowd.vercel.app |
+| `tracker/` | Tracker | `snowwarrior1-alt/Tracker` | dailytally.vercel.app |
+
+- This (personal-site) repo only tracks the portfolio files; it never tracks the
+  subfolders. Each subproject has its own `CLAUDE.md`.
+- **Shared Supabase:** MapCrowd and Tracker share one Supabase project named
+  **"Mapper+Tracker"** (ref `tmycdgnofvmbyrmpqohw`) — the free tier caps you at 2
+  projects. Each app owns its own tables and per-user RLS; Tracker's tables don't
+  touch MapCrowd's data. **Furnisher** stays on its own Supabase project for now
+  (established app; not worth a risky live-data migration), but the user is open
+  to folding it in later.
+
 ## Files
 
 | File | Purpose |
