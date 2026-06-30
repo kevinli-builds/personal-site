@@ -14,18 +14,19 @@ entire site is one file: [`index.html`](./index.html).
 
 ## Local workspace
 
-This repo is checked out at **`C:\Users\snoww\Mapper+Tracker\`** (renamed from
-`Map` in June 2026). That folder doubles as a workspace: alongside this
-portfolio it holds the sibling project repos as **gitignored subfolders**, each
-its own independent git repo:
+This repo now lives in its own dedicated folder, **`C:\Users\snoww\Personal Site\`**,
+moved out of the project workspace so the portfolio isn't tangled with the app repos.
+
+The sibling projects live separately in **`C:\Users\snoww\Mapper+Tracker\`** (renamed
+from `Map` in June 2026), which holds them as independent git repos:
 
 | Subfolder | Project | GitHub | Live |
 |---|---|---|---|
 | `mapcrowd/` | MapCrowd | `snowwarrior1-alts-projects`/`Mapper` | mapcrowd.vercel.app |
 | `tracker/` | Tracker | `snowwarrior1-alt/Tracker` | dailytally.vercel.app |
 
-- This (personal-site) repo only tracks the portfolio files; it never tracks the
-  subfolders. Each subproject has its own `CLAUDE.md`.
+- This (personal-site) repo only tracks the portfolio files; the app repos live in
+  the separate workspace folder above, each with its own `CLAUDE.md`.
 - **Shared Supabase:** MapCrowd and Tracker share one Supabase project named
   **"Mapper+Tracker"** (ref `tmycdgnofvmbyrmpqohw`) — the free tier caps you at 2
   projects. Each app owns its own tables and per-user RLS; Tracker's tables don't
@@ -57,8 +58,9 @@ To preview a content change locally, just open `index.html` in a browser.
 
 ## Conventions
 
-- **Theme:** dark, minimal. Colors/spacing are CSS custom properties in `:root`
-  (`--bg`, `--surface`, `--accent`, etc.) — reuse them, don't hard-code values.
+- **Theme:** pale/tan, light, minimal. Colors/spacing are CSS custom properties in
+  `:root` (`--bg` cream, `--text` warm brown, `--accent` ochre, etc.) — reuse them,
+  don't hard-code values.
 - **External links:** always `target="_blank" rel="noopener noreferrer"`.
 - **Security headers** live in `vercel.json`; the CSP allows the inline `<style>`
   block (`style-src 'unsafe-inline'`) but blocks all scripts (`script-src 'none'`).
