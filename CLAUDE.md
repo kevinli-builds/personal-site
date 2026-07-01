@@ -17,8 +17,9 @@ entire site is one file: [`index.html`](./index.html).
 This repo now lives in its own dedicated folder, **`C:\Users\snoww\Personal Site\`**,
 moved out of the project workspace so the portfolio isn't tangled with the app repos.
 
-The sibling projects live separately in **`C:\Users\snoww\Mapper+Tracker\`** (renamed
-from `Map` in June 2026), which holds them as independent git repos:
+The sibling projects live separately in **`C:\Users\snoww\Mapper-Tracker\`** (renamed
+from `Map` → `Mapper+Tracker` in June 2026; the `+` broke Turbopack's `next dev` HMR,
+so keep the path free of `+` and spaces), which holds them as independent git repos:
 
 | Subfolder | Project | GitHub | Live |
 |---|---|---|---|
