@@ -9,7 +9,7 @@ Plain static HTML/CSS with **no build step, no framework, no dependencies**. The
 entire site is one file: [`index.html`](./index.html).
 
 - **Live:** https://kevin-li-site.vercel.app
-- **GitHub:** https://github.com/snowwarrior1-alt/personal-site
+- **GitHub:** https://github.com/kevinli-builds/personal-site
 - **Host:** Vercel project `kevin-li-site` (team scope `snowwarrior1-alts-projects`)
 
 ## Local workspace
@@ -22,8 +22,8 @@ from `Map` in June 2026), which holds them as independent git repos:
 
 | Subfolder | Project | GitHub | Live |
 |---|---|---|---|
-| `mapcrowd/` | MapCrowd | `snowwarrior1-alts-projects`/`Mapper` | mapcrowd.vercel.app |
-| `tracker/` | Tracker | `snowwarrior1-alt/Tracker` | dailytally.vercel.app |
+| `mapcrowd/` | MapCrowd | `kevinli-builds`/`MapCrowd` | mapcrowd.vercel.app |
+| `tracker/` | Tracker | `kevinli-builds/Tracker` | dailytally.vercel.app |
 
 - This (personal-site) repo only tracks the portfolio files; the app repos live in
   the separate workspace folder above, each with its own `CLAUDE.md`.
