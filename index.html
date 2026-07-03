@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kevin Li — Product Manager</title>
-  <meta name="description" content="Kevin Li is a New York-based product manager who turns fun ideas into great experiences — a collection of small projects that help with everyday life." />
+  <meta name="description" content="Kevin Li is a product manager in New York building small apps for everyday life — habit tracking, apartment planning, shared maps, and more." />
   <meta property="og:title" content="Kevin Li — Product Manager" />
-  <meta property="og:description" content="A New York-based product manager who turns fun ideas into great experiences." />
+  <meta property="og:description" content="A product manager in New York building small apps for everyday life." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://kevin-li-site.vercel.app" />
   <style>
@@ -167,10 +167,50 @@
       </div>
     </nav>
 
+    <!-- Hero -->
+    <header class="hero">
+      <h1>Small apps for <span>everyday life</span>.</h1>
+      <p>I'm Kevin, a product manager in New York. Everything here started as something a friend or I actually needed — built nights and weekends.</p>
+    </header>
+
     <!-- Projects -->
     <section id="projects">
       <p class="section-label">Projects</p>
       <div class="projects">
+
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">Energy Map</span>
+            <div class="card-links">
+              <a class="badge live" href="https://energy-map-delta.vercel.app/" target="_blank" rel="noopener noreferrer">↗ Live</a>
+              <a class="badge github" href="https://github.com/kevinli-builds/EnergyMap" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+          <p class="card-desc">I kept reading headlines about record-breaking solar farms and had no idea where any of them actually were. So I put about 2,500 of the world's biggest solar, wind, and battery projects on a globe you can spin — along with the companies building them, and who's hiring right now.</p>
+          <div class="tag-row">
+            <span class="tag">Next.js</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">MapLibre GL</span>
+            <span class="tag">Vercel</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">PersonalAssist</span>
+            <div class="card-links">
+              <a class="badge github" href="https://github.com/kevinli-builds/PersonalAssist" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+          <p class="card-desc">I can never remember when I last donated blood or got a flu shot. Now I type a quick note, Claude turns it into a proper entry with dates and reminders, I confirm it read me right, and my phone pings me when it matters again.</p>
+          <div class="tag-row">
+            <span class="tag">Next.js</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Claude AI</span>
+            <span class="tag">Web Push</span>
+            <span class="tag">Vercel</span>
+          </div>
+        </div>
 
         <div class="card">
           <div class="card-header">
@@ -180,7 +220,7 @@
               <a class="badge github" href="https://github.com/kevinli-builds/Tracker" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
-          <p class="card-desc">I wanted to create a minimalist daily tracker to help me understand how well I'm building my day-to-day habits. I've built a quick "tap to update" front page, as well as some visualization and analytics on the data.</p>
+          <p class="card-desc">I wanted a dead-simple way to see whether I'm actually keeping up my day-to-day habits. Logging is one tap on the front page; behind it there's a calendar, streaks, and charts for everything I track.</p>
           <div class="tag-row">
             <span class="tag">Next.js</span>
             <span class="tag">React</span>
@@ -218,7 +258,7 @@
               <a class="badge github" href="https://github.com/kevinli-builds/MapCrowd" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
-          <p class="card-desc">My friends and I have so many recommendations, I wanted to give everyone a central place to store and share them all. I built out routing, photo and note uploads, and added functionality for real-time live events!</p>
+          <p class="card-desc">My friends and I have so many recommendations, I wanted to give everyone a central place to store and share them all. It grew into routes you can follow, photo uploads, and live event pins with RSVPs.</p>
           <div class="tag-row">
             <span class="tag">Next.js</span>
             <span class="tag">TypeScript</span>
@@ -253,7 +293,7 @@
               <a class="badge github" href="https://github.com/kevinli-builds/BookTracker" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
-          <p class="card-desc">My friend is a behavior economics researcher and wanted to see how the act of "tracking" changes our behavior. I helped him build a book tracking website with augments for research, such as pushing goals for users, and robust backend admin controls and analytics.</p>
+          <p class="card-desc">My friend is a behavioral economics researcher who wanted to study how the act of "tracking" changes what we do. I helped him build a book-tracking app with the research pieces he needed: assigning goals to participants, recurring check-in surveys, and an admin panel to run the study and export the data.</p>
           <div class="tag-row">
             <span class="tag">TypeScript</span>
             <span class="tag">Vercel</span>
@@ -269,7 +309,7 @@
               <a class="badge github" href="https://github.com/kevinli-builds/SurveyTok" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
-          <p class="card-desc">I've always wanted to know how people's preferences for the day-to-day look. I built the surveytok site to help answer questions like "Do you prefer pizza or hamburgers", with the vision of having a lot of users and surveyors quickly ask and answer fun questions about their lives.</p>
+          <p class="card-desc">I've always wondered where people land on the small questions — pizza or hamburgers? SurveyTok is a swipe-through feed of quick anonymous polls: tap an answer, see the live results instantly.</p>
           <div class="tag-row">
             <span class="tag">TypeScript</span>
             <span class="tag">Render</span>
@@ -282,7 +322,7 @@
     <!-- About -->
     <section id="about" class="about">
       <p class="section-label">About</p>
-      <p>I'm a product manager based in New York who has fun ideas and wants to turn them into great experiences. I like making small projects that help address pain points in day-to-day life, and I've got a knack for user experiences that I want to push throughout my work.</p>
+      <p>By day I'm a product manager. These projects are where I get to own the whole thing — the idea, the design, the build, the launch. Most exist because someone I know had a problem a few weekends of work could fix, and I care a lot about how things feel to use.</p>
     </section>
 
     <!-- Contact -->

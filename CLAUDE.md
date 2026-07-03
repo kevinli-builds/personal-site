@@ -96,4 +96,6 @@ goes **first**. Each card follows this structure:
 
 ## Current projects
 
-Tracker, Furnisher, MapCrowd, Do I Want to Know, BookTracker, SurveyTok.
+Energy Map, PersonalAssist (GitHub badge only — the deployment is a
+password-gated personal app), Tracker, Furnisher, MapCrowd, Do I Want to Know,
+BookTracker, SurveyTok.
