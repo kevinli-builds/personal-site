@@ -45,14 +45,20 @@ so keep the path free of `+` and spaces), which holds them as independent git re
 
 ## Deploy workflow
 
-Changes go to `main` and deploy via the Vercel CLI (there is **no** local dev
-server — it's a static file). After editing:
+> ⚠️ **Production does NOT auto-deploy from a git push.** This Vercel project has
+> no Git integration — a `git push` alone changes *nothing* on the live site. The
+> only thing that publishes is `vercel --prod`. Always run it as the final step, or
+> your edits sit in `main` unpublished (this has bitten us before). The project is
+> already linked via `.vercel/`, so `--scope`/`--yes` are optional.
+
+Changes go to `main` and then deploy via the Vercel CLI (there is **no** local dev
+server — it's a static file). After editing, run all four steps:
 
 ```bash
 git add index.html
 git commit -m "…"
 git push
-vercel --prod --scope snowwarrior1-alts-projects
+vercel --prod            # ← REQUIRED to go live; nothing publishes without it
 ```
 
 To preview a content change locally, just open `index.html` in a browser.
