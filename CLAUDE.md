@@ -45,21 +45,20 @@ so keep the path free of `+` and spaces), which holds them as independent git re
 
 ## Deploy workflow
 
-> ⚠️ **Production does NOT auto-deploy from a git push.** This Vercel project has
-> no Git integration — a `git push` alone changes *nothing* on the live site. The
-> only thing that publishes is `vercel --prod`. Always run it as the final step, or
-> your edits sit in `main` unpublished (this has bitten us before). The project is
-> already linked via `.vercel/`, so `--scope`/`--yes` are optional.
-
-Changes go to `main` and then deploy via the Vercel CLI (there is **no** local dev
-server — it's a static file). After editing, run all four steps:
+**Production auto-deploys from `main`.** As of Jul 2026 the Vercel project is
+connected to the GitHub repo (`vercel git connect`), so a push to `main` deploys to
+production automatically and PRs get preview deployments. There is **no** local dev
+server — it's a static file. After editing, just:
 
 ```bash
 git add index.html
 git commit -m "…"
-git push
-vercel --prod            # ← REQUIRED to go live; nothing publishes without it
+git push                 # auto-deploys to production
 ```
+
+Give it a minute after the push, then confirm at https://kevin-li-site.vercel.app.
+`vercel --prod` still works as a manual fallback (the project stays linked via
+`.vercel/`) if you ever need to force a deploy without a push.
 
 To preview a content change locally, just open `index.html` in a browser.
 
