@@ -50,3 +50,21 @@ Nothing structural — it's one static file with a locked-down CSP (`script-src
 - **CSS-only dark mode**: a checkbox-hack toggle flipping the `:root` palette
   to a warm-dark equivalent. A no-JS dark mode is itself the flex — it
   demonstrates craft within constraints, which is the site's whole thesis.
+
+---
+
+## Security & code-quality audit (2026-07-12, Fable portfolio pass)
+
+_Single static `index.html` + `vercel.json`, PUBLIC. **This is the portfolio's
+security exemplar** and needs nothing._
+
+- CSP is genuinely locked down: `script-src 'none'`, `object-src 'none'`,
+  `base-uri 'none'`, `frame-ancestors 'none'`, `default-src 'self'`, plus
+  `X-Content-Type-Options`, `X-Frame-Options: DENY`, `Referrer-Policy`, and a
+  minimal `Permissions-Policy`. Zero `<script>` tags in the HTML. No JS = no XSS.
+- External links use `rel="noopener noreferrer"` per convention.
+
+**Only reminder:** if you ever add a `<script>` (analytics, an interaction), the
+`script-src 'none'` CSP will (correctly) block it — loosen the CSP deliberately and
+minimally (prefer a nonce/hash over `'unsafe-inline'`), don't reflexively widen it.
+Otherwise: nothing to do.
